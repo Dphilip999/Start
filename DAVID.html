@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Philip</title> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+        </style>
+</head>
+
+
+<body>
+     <header>
+    <a href="#" class="Logo">David Philip &copy;</a>
+    <ul>
+        <script type="text/javascript">
+            function redirecionamento()
+            {
+                windon.location.replace("https://web.whatsapp.com/")
+            }
+            
+             </script>       
+                <li><a href="https://www.instagram.com/" class="active">Home</a></li>
+                <li><a href="https://www.linkedin.com/in/david-philip-0487b31a6/" class="button">Sobre</a></li>
+                <li><a href="https://drive.google.com/file/d/1xDzAMOFtvHZbpRf_lzSCNbrxIp48UdxT/view?usp=sharing" class="button">E-book</a></li>
+                <li><a href="https://whats.link/davidphilippc" class="button">Contato</a></li>
+        
+        </ul>
+    </header>
+    
+  
+   <section>
+       <img src="stars.png" id="stars">
+       <img src="moon.png" id="moon">
+       <img src="mountains_behind.png" id="mountains_behind">
+       <h2 id="text">Copywriter e Programador.</h2>
+       <a href="#sec" id="btn">Saber mais</a>
+       <img src="mountains_front.png" id="mountains_front">
+   </section>
+   <div class="sec" id="sec">
+    
+       <h2>Especialista em impulsionar negócios. &#128640;</i></h2>
+       <p>
+           <br><br>
+           Aumente suas vendas de forma estratosférica, com esse simples passo a passo:
+
+        <br><br> 1º:  Você precisa promover seu negócio através dos anúncios online, pense comigo, passamos horas no celular,dia após dia, fins de semana e feriados, você concorda que seu negócio precisa estar na telinha da sua clientela?
+        <br><br>
+        2º:  POSICIONAMENTO, não só basta estar na tela do celular, tem que estar nas telas certas, nas horas certas, você concorda? então, eu consigo mostrar seu negócio EXCLUSIVAMENTE para seus futuros clientes,  bom demais para ser verdade? continua comigo,  você vai se surpreender.
+        <br><br>
+        3º:  Esse aqui é a GRANDE cartada!! você precisa de um projeto totalmente personalizado para o seu negócio,  só assim os resultados vão ser satisfatórios, você precisa de alguém que consiga anunciar seu negócio de forma cirúrgica, eisso é o que eu faço de melhor!!
+        <br><br>
+                 <br><br>Entre em contato para mais informações. &phone;</p>
+   </div>
+   <script>
+       let stars = document.getElementById("stars"); 
+       let moon = document.getElementById("moon"); 
+       let mountains_behind = document.getElementById("mountains_behind"); 
+       let text =document.getElementById("text");
+       let btn = document.getElementById("btn");
+       let mountains_front = document.getElementById("mountains_front"); 
+       let header =document.querySelector("header");
+
+       window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px'; 
+        moon.style.top = value * 1.05 + 'px';
+        mountains_behind.style.top = value * 0.5 + 'px';
+        mountains_front.style.top = value * 0 + 'px';
+        text.style.marginRight = value * 4 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        btn.style.marginTop = value * 1.5 + 'px'; 
+        header.style.top = value * 0.5 + 'px';
+
+
+
+    })
+    </script>
+  </body>
+</html>
